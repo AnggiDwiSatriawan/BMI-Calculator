@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 
 <body>
@@ -23,32 +23,11 @@
         
         <input id="button" type="submit" value="Calculate BMI">
 
-        <p>Your BMI is <strong><span id="result-number">0</span></strong> which means you are
-            <strong><span id="result-text">--</span></strong></p>
+        <p>Your BMI is <strong><span id="number-result">0</span></strong> which means you are
+            <strong><span id="description-result">--</span></strong></p>
 
-
-        <!-- <script>
-            document.getElementById('button').addEventListener('click', function(){
-                const weight = document.getElementById('weight').value;
-                const height = document.getElementById('height').value;
-                const result = Number(weight)/(Number(height)/100)**2
-                
-                console.log(result);
-
-                document.getElementById('result-number').innerText = result.toFixed(1);
-
-                if(result < 18.5){
-                    document.getElementById('result-text').innerText = "Underweight"
-                } else if(result <= 24.9){
-                    document.getElementById('result-text').innerText = "Normal"
-                } else if(result <= 29.9){
-                    document.getElementById('result-text').innerText = "Overweight"
-                } else{
-                    document.getElementById('result-text').innerText = "Obesity"
-                }
-            });
-        </script> -->
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

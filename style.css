@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 .form{
+    font-family: 'Poppins';
     height: 500px;
     display: flex;
     justify-content: center;
@@ -22,12 +25,17 @@
     border: 2px solid rgb(6, 209, 255);
 }
 
+.form-content label{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
 .form-content h3{
     text-align: center;
 }
 
 #button{
-    width: 100px;
+    width: 150px;
     height: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -35,6 +43,7 @@
     background-color: #ffff;
     border: 2px solid rgb(6, 209, 255);
     border-radius: 5px;
+    font-weight: 600;
 }
 
 #button:hover{
