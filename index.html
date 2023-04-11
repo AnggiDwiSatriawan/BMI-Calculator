@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="form">
+        <div class="form-content">
+        <h3>Check your BMI</h3>
+        <p>Enter your height and weight below to check your BMI result</p>    
+
+        <label for="weight">Put your weight in here (Kg)</label>
+        <input type="number" id="weight" required>
+
+        <label for="height">And your height in here (Cm)</label>
+        <input type="number" id="height" required>
+        
+        <input id="button" type="submit" value="Calculate BMI">
+
+        <p>Your BMI is <strong><span id="result-number">0</span></strong> which means you are
+            <strong><span id="result-text">--</span></strong></p>
+
+
+        <!-- <script>
+            document.getElementById('button').addEventListener('click', function(){
+                const weight = document.getElementById('weight').value;
+                const height = document.getElementById('height').value;
+                const result = Number(weight)/(Number(height)/100)**2
+                
+                console.log(result);
+
+                document.getElementById('result-number').innerText = result.toFixed(1);
+
+                if(result < 18.5){
+                    document.getElementById('result-text').innerText = "Underweight"
+                } else if(result <= 24.9){
+                    document.getElementById('result-text').innerText = "Normal"
+                } else if(result <= 29.9){
+                    document.getElementById('result-text').innerText = "Overweight"
+                } else{
+                    document.getElementById('result-text').innerText = "Obesity"
+                }
+            });
+        </script> -->
+        </div>
+    </div>
+</body>
+</html>
